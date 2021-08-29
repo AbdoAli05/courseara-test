@@ -36,8 +36,12 @@
 
         nav ul li:hover,
         .active {
-            background-color: #555;
+            background-color: rgb(196, 184, 184);
             color: whitesmoke;
+            box-shadow: 4px 3px 8px 1px #d62c2c;
+            border-radius: 3px;
+
+
         }
 
         .content-container {
@@ -60,33 +64,65 @@
 
         }
 
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
         .btn {
             background-color: rgba(21, 214, 21, 0.822);
+
+
             height: 1.5em;
-            padding: 1em;
-            
+            padding: 1em 3em;
+
+            max-width: 5em;
             border-radius: 1em;
 
         }
-        div{
-            border-radius: 1rem;
+
+
+
+        .box-shadow {
+            background: #ccc;
+            box-shadow: 4px 3px 8px 1px #969696;
+            width: fit-content;
+
+
         }
+
+        div {
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .html {
             background-color: #e62727b3;
         }
-        .css{
+
+        .css {
             background-color: antiquewhite;
         }
-        .js{
+
+        .js {
             background-color: burlywood;
         }
-        .python{
-           
+
+        .python {
+
             background-color: darkgray;
         }
-        .btn:hover{
+
+        .btn:hover {
             letter-spacing: 1px;
-            box-shadow:black 1px;
+            box-shadow: black 1px;
+            border: 1px solid black;
+            cursor: pointer;
+
         }
     </style>
 </head>
@@ -105,29 +141,37 @@
         <div class="html">
             <h1>Html</h1>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <div class="btn">learn Html</div>
-            <div class="btn">Html reference</div>
+            <div class="btn-container box-shadow">
+                <div class="btn">learn Html</div>
+                <div class="btn">Html reference</div>
+            </div>
 
         </div>
         <div class="css">
             <h1>Css</h1>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <div class="btn">learn Css</div>
-            <div class="btn">Css reference</div>
+            <div class="btn-container box-shadow">
+                <div class="btn">learn Css</div>
+                <div class="btn">Css reference</div>
+            </div>
 
         </div>
         <div class="js">
             <h1>Js</h1>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <div class="btn">learn Js</div>
-            <div class="btn">Js reference</div>
+            <div class="btn-container box-shadow">
+                <div class="btn">learn Js</div>
+                <div class="btn">Js reference</div>
+            </div>
 
         </div>
         <div class="python">
             <h1>Python</h1>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <div class="btn">learn Python</div>
-            <div class="btn">Python reference</div>
+            <div class="btn-container box-shadow">
+                <div class="btn">learn Python</div>
+                <div class="btn">Python reference</div>
+            </div>
 
         </div>
     </section>
